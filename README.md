@@ -1,4 +1,6 @@
-# BookFinder
+# React + Vite
+
+## BookFinder
 
 **Simple book search app for Alex (college student).**
 
