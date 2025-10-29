@@ -1,16 +1,31 @@
-# React + Vite
+# BookFinder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Simple book search app for Alex (college student).**
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## What it does
+- Search books by **title** using the Open Library API.  
+- Show book **cover**, **authors**, **first published year**, **subjects**, and **edition count**.  
+- Save **favorites** (stored in browser).  
+- Keep **recent searches** as chips (click to reuse).  
+- Pagination (Prev / Next) and simple sorting (relevance / year).  
+- Responsive UI: works on mobile and desktop (favorites drawer on mobile, panel on desktop).
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech
+- **React** (functional components + hooks)  
+- **Open Library Search API** (`https://openlibrary.org/search.json?title={title}`) — no auth  
+- **Tailwind CSS** (recommended for exact styles) — component works without it but will need CSS adjustments
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Quick setup (basic)
+1. Create a React app (Create React App or Vite).  
+2. Copy `App.jsx` into your project (replace default App).  
+3. (Optional) Install and enable Tailwind if you want the same look.  
+4. Run:
+   ```bash
+   npm install
+   npm start   # or `npm run dev` for Vite
